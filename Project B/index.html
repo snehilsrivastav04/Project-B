@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, nav, main, footer {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        nav {
+            background-color: #f2f2f2;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav .dropdown {
+            position: relative;
+        }
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Website Name</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to Our Website!</h2>
+        <p>This is the main content of your website. Customize it as needed.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
